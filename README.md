@@ -2,8 +2,8 @@
 
 FastAPI 图片倾斜检测服务。部署目标：
 
-- 项目目录：`/home/liuxiaoqing/tias_yxy_0923/detect_tilt`
-- 对外地址：`http://10.80.5.197:8881/detect_tilt`
+- 项目目录：`/root/detect_tilt`
+- 对外地址：`http://服务器IP:端口/detect_tilt`
 - Postman 请求方式：`POST`，`Body -> raw`，直接粘贴图片 base64 字符串
 
 ## 重要说明
@@ -90,7 +90,7 @@ curl http://127.0.0.1:8881/health
 ## Postman 测试
 
 1. Method 选择 `POST`
-2. URL 填 `http://10.80.5.197:8881/detect_tilt`
+2. URL 填 `http://服务器IP:端口/detect_tilt`
 3. Body 选择 `raw`
 4. raw 内容直接粘贴图片 base64 字符串
 5. Header 可用 `Content-Type: text/plain`
